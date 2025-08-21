@@ -17,7 +17,7 @@
 </html>
 <body class="page">
   <header class="header">
-    <div class="header__container container">
+    <div class="header__bar container">
       <a href="/" class="header__brand">Publisht</a>
       <div class="header__actions">
         <button
@@ -93,8 +93,8 @@
         </button>
       </div>
     </div>
-
-    <nav class="header__nav">
+    <div class="header__overlay" hidden></div>
+    <nav id="header-drawer" class="header__drawer" aria-hidden="true">
       <ul class="header__menu">
         <li class="header__menu-item"><a href="#">Home</a></li>
         <li class="header__menu-item"><a href="#">Product</a></li>
@@ -102,6 +102,22 @@
         <li class="header__menu-item"><a href="#">Contact</a></li>
       </ul>
     </nav>
-    <div class="header__overlay"></div>
   </header>
+  <section class="hero">
+    <div class="hero__bg">
+      <!-- картинка фоном (CSS) или picture внутри -->
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content container">
+      <h1 class="hero__title">Finance and Consultancy Solution</h1>
+      <p class="hero__text">
+        We know how large objects will act, but things on a small scale just do
+        not act that way.
+      </p>
+      <div class="hero__actions">
+        <a class="button button--primary" href="#">Get Quote Now</a>
+        <a class="button button--outline" href="#">Learn More</a>
+      </div>
+    </div>
+  </section>
 </body>

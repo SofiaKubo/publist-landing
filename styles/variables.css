@@ -1,6 +1,6 @@
 :root {
   --background-image: url("../images/cover-image-dark.png");
-  --background-color: #000028;
+  --color-bg: #252b42;
   --accent-color: #ff0070;
   --main-font-size: 18px;
   --main-font: "IBM Plex Mono", monospace;
@@ -11,7 +11,7 @@
   --gap-medium: 20px;
   --gap-large: 60px;
   --title-decor-color: #000028;
-  --text-color: #f1b2ce;
+  --color-text: #ffffff;
   --border-hover-color: #ff007066;
   --heading-color: #db00ff;
   --section-title-color: #ff0070;

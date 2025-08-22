@@ -40,37 +40,19 @@
           <button class="header__action header__action--cart" aria-label="Cart">
             <svg
               width="24"
-              height="18"
-              viewBox="0 0 24 18"
-              fill="none"
+              height="22.4"
+              viewBox="0 0 24 22.4"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
-              <path
-                d="M22.4 4.00016H4.656L4 0.640163C3.9626 0.456742 3.86206 0.292245 3.71589 0.175305C3.56971 0.0583653 3.38716 -0.00361159 3.2 0.000162751H0V1.60016H2.544L5.6 16.9602C5.6374 17.1436 5.73794 17.3081 5.88411 17.425C6.03029 17.542 6.21284 17.6039 6.4 17.6002H20.8V16.0002H7.056L6.4 12.8002H20.8C20.9849 12.8047 21.1657 12.745 21.3116 12.6312C21.4574 12.5174 21.5594 12.3566 21.6 12.1762L23.2 4.97616C23.2268 4.85746 23.2262 4.73421 23.1982 4.61579C23.1702 4.49737 23.1155 4.38689 23.0384 4.29278C22.9612 4.19867 22.8636 4.12339 22.753 4.07268C22.6424 4.02198 22.5217 3.99717 22.4 4.00016ZM20.16 11.2002H6.096L4.976 5.60016H21.4L20.16 11.2002Z"
-              />
+              <g fill="currentColor">
+                <path
+                  d="M22.4 4.00016H4.656L4 0.640163C3.9626 0.456742 3.86206 0.292245 3.71589 0.175305C3.56971 0.0583653 3.38716 -0.00361159 3.2 0.000162751H0V1.60016H2.544L5.6 16.9602C5.6374 17.1436 5.73794 17.3081 5.88411 17.425C6.03029 17.542 6.21284 17.6039 6.4 17.6002H20.8V16.0002H7.056L6.4 12.8002H20.8C20.9849 12.8047 21.1657 12.745 21.3116 12.6312C21.4574 12.5174 21.5594 12.3566 21.6 12.1762L23.2 4.97616C23.2268 4.85746 23.2262 4.73421 23.1982 4.61579C23.1702 4.49737 23.1155 4.38689 23.0384 4.29278C22.9612 4.19867 22.8636 4.12339 22.753 4.07268C22.6424 4.02198 22.5217 3.99717 22.4 4.00016ZM20.16 11.2002H6.096L4.976 5.60016H21.4L20.16 11.2002Z"
+                />
+                <circle cx="8.0" cy="21.0" r="1.5" />
+                <circle cx="19.0" cy="21.0" r="1.5" />
+              </g>
             </svg>
-            <!-- <svg
-            width="4"
-            height="4"
-            viewBox="0 0 4 4"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M2.19961 3.40019C3.08326 3.40019 3.79961 2.68385 3.79961 1.80019C3.79961 0.916539 3.08326 0.200195 2.19961 0.200195C1.31595 0.200195 0.599609 0.916539 0.599609 1.80019C0.599609 2.68385 1.31595 3.40019 2.19961 3.40019Z"
-            />
-          </svg> -->
-            <!-- <svg
-            width="4"
-            height="4"
-            viewBox="0 0 4 4"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M2.00039 3.40019C2.88405 3.40019 3.60039 2.68385 3.60039 1.80019C3.60039 0.916539 2.88405 0.200195 2.00039 0.200195C1.11674 0.200195 0.400391 0.916539 0.400391 1.80019C0.400391 2.68385 1.11674 3.40019 2.00039 3.40019Z"
-            />
-          </svg> -->
           </button>
           <button class="header__action header__action--menu" aria-label="Menu">
             <svg
@@ -112,6 +94,68 @@
           <a class="button button--primary" href="#">Get Quote Now</a>
           <a class="button button--outline" href="#">Learn More</a>
         </div>
+      </div>
+    </section>
+    <section class="appointment">
+      <div class="appointment__card container">
+        <h2 class="appointment__title">Book Appointment</h2>
+        <form class="appointment__form" action="#" method="post" novalidate>
+          <div class="form-field">
+            <label class="form-field__label" for="name">Name*</label>
+            <input
+              class="form-field__control"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Full Name"
+              autocomplete="name"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-field__label" for="email">Email*</label>
+            <input
+              class="form-field__control"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@gmail.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-field__label" for="department"
+              >Department*</label
+            >
+            <select
+              class="form-field__control"
+              id="department"
+              name="department"
+              required
+            >
+              <option value="" selected disabled>Please Select</option>
+              <option value="finance">Finance</option>
+              <option value="consulting">Consulting</option>
+              <option value="support">Support</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label class="form-field__label" for="time">Time*</label>
+            <select class="form-field__control" id="time" name="time" required>
+              <option value="" selected disabled>4:00 Available</option>
+              <option value="10:00">10:00</option>
+              <option value="12:00">12:00</option>
+              <option value="16:00">16:00</option>
+            </select>
+          </div>
+          <button
+            class="button button--primary appointment__submit"
+            type="submit"
+          >
+            Book Appointment
+          </button>
+        </form>
       </div>
     </section>
   </body>

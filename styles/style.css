@@ -1,3 +1,18 @@
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .header__action svg {
   fill: currentColor;
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 16px; /* чтобы на маленьких экранах не прилипало к краям */
 }

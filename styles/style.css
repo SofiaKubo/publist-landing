@@ -1,3 +1,18 @@
+.header {
+}
+
+.header__bar {
+  min-height: 58px;
+  display: flex;
+  gap: 127px;
+  justify-content: space-between;
+  padding-block-start: 23px;
+  padding-inline-start: 34px;
+}
+
+.header__brand {
+}
+
 .header__actions {
   display: flex;
   align-items: center;
@@ -15,4 +30,10 @@
   max-width: 1200px;
   margin: 0 auto;
   padding-inline: 16px; /* чтобы на маленьких экранах не прилипало к краям */
+}
+
+.hero__bg {
+  background-image: url(../images/cover.png);
+  background-repeat: no-repeat;
+  background-position: right center;
 }

@@ -51,7 +51,7 @@
   direction: column;
   position: fixed;
   inset: 0;
-  z-index: 40/50;
+  z-index: 20;
 }
 
 .header__action svg {

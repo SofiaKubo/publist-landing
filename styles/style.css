@@ -164,6 +164,7 @@
 }
 
 .button {
+  display: inline-flex;
   border-radius: 37px;
   padding: 10px 36px;
   font-size: 14px;
@@ -171,21 +172,15 @@
 }
 
 .button--primary {
-  width: 187px;
-  height: 48px;
   border: none;
   background-color: #ff7b47;
 }
 
 .button--outline {
-  width: 157px;
-  height: 48px;
   border: 1px solid #fff;
   background-color: transparent;
 }
 
 .appointment__submit {
-  width: 248px;
-  height: 58px;
   border-radius: 0;
 }

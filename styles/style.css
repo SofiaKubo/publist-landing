@@ -40,12 +40,13 @@ body.scroll-lock {
   inset: 0;
   z-index: 1;
   background: var(--color-overlay, rgba(0, 0, 0, 0.3));
+  pointer-events: none;
 }
 
 .header {
+  --header-height: 82px;
   position: relative;
   z-index: 100;
-  --header-height: 82px;
 }
 
 .header__bar {
@@ -91,48 +92,48 @@ body.scroll-lock {
 .header__drawer {
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
+  left: 0;
   z-index: 50;
-  background: var(--color-brand, #252b42);
-  color: var(--color-on-brand, #fff);
-  padding: calc(var(--header-height) + 12px) 24px 24px;
-  border-radius: 0;
   display: block;
-  transform-origin: top;
-  transform: scaleY(0.001);
+  border-radius: 0;
+  padding: calc(var(--header-height) + 12px) 24px 24px;
   opacity: 0;
-  pointer-events: none;
+  color: var(--color-on-brand, #fff);
+  background: var(--color-brand, #252b42);
   transition: transform 0.28s ease, opacity 0.2s ease;
+  transform: scaleY(0.001);
+  transform-origin: top;
+  pointer-events: none;
 }
 
 .header__drawer.is-open {
-  transform: scaleY(1);
   opacity: 1;
+  transform: scaleY(1);
   pointer-events: auto;
 }
 
 .header__menu {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 20px;
   align-items: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
   text-align: center;
+  list-style: none;
 }
 
 .header__menu-item a {
-  color: currentColor;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 1.4;
   display: inline-flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   min-height: 44px;
   padding-inline: 8px;
+  color: currentColor;
+  font-size: 18px;
+  line-height: 1.4;
+  text-decoration: none;
 }
 
 .header__overlay {
@@ -141,8 +142,8 @@ body.scroll-lock {
   z-index: 40;
   opacity: 0;
   background: rgba(0, 0, 0, 0.5);
-  pointer-events: none;
   transition: opacity 0.2s ease;
+  pointer-events: none;
 }
 
 .header__overlay.is-visible {
@@ -157,6 +158,8 @@ body.scroll-lock {
 }
 
 .intro__content {
+  position: relative;
+  z-index: 10;
   margin-block-start: 84px;
 }
 

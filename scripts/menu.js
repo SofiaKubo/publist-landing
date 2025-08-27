@@ -3,12 +3,12 @@
 (function initBurgerMenu() {
   const burgerBtn = document.querySelector(".header__action--menu");
   const drawer = document.getElementById("header-drawer");
-  const overlay = document.querySelector(".site-overlay");
+  const overlay = document.querySelector(".header__overlay");
   const pageContent = document.getElementById("page-content");
 
   if (!burgerBtn || !drawer || !overlay) {
     console.warn(
-      "[menu] Не найдены необходимые элементы. Проверь селекторы и HTML."
+      "[menu] Required elements not found. Check selectors and HTML."
     );
     return;
   }

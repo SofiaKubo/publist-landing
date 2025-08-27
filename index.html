@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" />
-    <script src="./scripts/script.js" defer></script>
+    <script src="./scripts/theme.js" defer></script>
+    <script src="./scripts/menu.js" defer></script>
   </head>
   <body class="page">
     <div class="intro">
@@ -71,6 +72,7 @@
               aria-haspopup="menu"
             >
               <svg
+                aria-hidden="true"
                 width="24"
                 height="14"
                 viewBox="0 0 24 14"
@@ -84,12 +86,12 @@
             </button>
           </div>
         </div>
-        <div class="header__overlay" hidden></div>
+        <div class="header__overlay" hidden aria-hidden="true"></div>
         <nav
           id="header-drawer"
           class="header__drawer"
           aria-hidden="true"
-          aria-label="Primary"
+          aria-label="Main navigation"
         >
           <ul class="header__menu">
             <li class="header__menu-item"><a href="#">Home</a></li>
@@ -99,7 +101,7 @@
           </ul>
         </nav>
       </header>
-      <div class="intro__content container">
+      <div class="intro__content container" id="page-content">
         <section class="hero">
           <div class="hero__content">
             <h1 class="hero__title">Finance and Consultancy Solution</h1>

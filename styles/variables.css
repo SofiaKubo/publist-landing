@@ -14,4 +14,5 @@
   --heading-color: #db00ff;
   --section-title-color: #ff0070;
   --corner-color: var(--accent-color, #ff0070);
+  --color-overlay: rgba(0, 0, 0, 0.3);
 }

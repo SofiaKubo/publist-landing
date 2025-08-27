@@ -31,7 +31,7 @@ body.scroll-lock {
   z-index: 0;
   background-image: url(../images/cover.png);
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: top center;
   background-size: cover;
 }
 
@@ -44,7 +44,7 @@ body.scroll-lock {
 }
 
 .header {
-  --header-height: 82px;
+  --header-height: 83px;
   position: relative;
   z-index: 100;
 }
@@ -80,6 +80,7 @@ body.scroll-lock {
   width: 32px;
   height: 32px;
   color: currentColor;
+  cursor: pointer;
 }
 
 .header__action svg {
@@ -87,6 +88,14 @@ body.scroll-lock {
   width: 24px;
   height: 24px;
   fill: currentColor;
+}
+
+.header__action svg path {
+  fill: currentColor;
+}
+
+.header__action svg [stroke] {
+  stroke: currentColor;
 }
 
 .header__drawer {

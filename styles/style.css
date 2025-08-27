@@ -1,6 +1,6 @@
 .page {
   color: var(--color-text, #fff);
-  font-family: var(--font-family-base, "Inter", sans-serif);
+  font-family: var(--font-family-base, Montserrat, sans-serif);
   font-size: var(--font-size-base, 16px);
   line-height: var(--line-height-base, 1.5);
   background-color: var(--color-bg);
@@ -140,8 +140,10 @@ body.scroll-lock {
   min-height: 44px;
   padding-inline: 8px;
   color: currentColor;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 30px;
   line-height: 1.4;
+  line-height: 45px;
   text-decoration: none;
 }
 
@@ -162,7 +164,7 @@ body.scroll-lock {
 
 .header__action:focus-visible,
 .header__menu a:focus-visible {
-  outline: 2px solid rgba(255, 255, 255, 0.65);
+  outline: 1px solid rgba(255, 123, 71, 0.65);
   outline-offset: 3px;
 }
 
@@ -207,6 +209,7 @@ body.scroll-lock {
   padding: 10px 36px;
   font-size: 14px;
   line-height: 28px;
+  transition: transform 0.5s;
 }
 
 .button--primary {
@@ -219,6 +222,10 @@ body.scroll-lock {
 }
 .button.button--no-radius {
   border-radius: 0;
+}
+
+.button:hover {
+  transform: scale(110%);
 }
 
 @media (prefers-reduced-motion: reduce) {

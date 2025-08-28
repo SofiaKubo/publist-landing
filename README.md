@@ -39,7 +39,8 @@ publist-landing/
 ├── fonts/              # Local fonts
 ├── images/             # Image assets
 ├── scripts/
-│   └── script.js       # JS logic for interactivity
+│   ├── theme.js        # JS logic for interactivity
+│   └── menu.js
 ├── styles/
 │   ├── globals.css     # Reset and global rules
 │   ├── variables.css   # CSS custom properties

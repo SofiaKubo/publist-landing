@@ -236,8 +236,8 @@ body.scroll-lock {
   max-width: 330px;
   border-radius: 10px;
   padding: var(--card-pt) var(--card-px) var(--card-pb);
-  background-color: #fff;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
 }
 
 .form-field {
@@ -270,32 +270,32 @@ body.scroll-lock {
 
 .form-field__control {
   width: 100%;
-  min-block-size: 50px;
   border: 1px solid #bdbdbd;
   border-radius: 5px;
   padding: 0 16px;
   color: #737373;
-  font-family: inherit;
   font: 400 14px/1.4 inherit;
+  font-family: inherit;
   background-color: transparent;
+  min-block-size: 50px;
 }
 
 select.form-field__control {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   padding-right: 44px;
   background-image: url(../images/Vector.svg);
   background-repeat: no-repeat;
   background-position: right 16px center;
   background-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .appointment__form .button {
   width: 100%;
-  min-block-size: 56px;
   margin-top: 10px;
   border-radius: 0;
+  min-block-size: 56px;
 }
 
 .form-field__control::placeholder {
